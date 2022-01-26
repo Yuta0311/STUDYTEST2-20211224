@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Spiner : MonoBehaviour
+{
+
+    [SerializeField] float xAngle = 0;
+    [SerializeField] float yAngle = 0;
+    [SerializeField] float zAngle = 0;
+
+    // Update is called once per frame
+    void Update()
+    {
+        //Transform.Rotation(xAngle, yAngle, zAngle);
+        transform.Rotate(xAngle, yAngle, zAngle);
+    }
+}
